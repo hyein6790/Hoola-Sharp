@@ -58,11 +58,11 @@ namespace HoolaLucian
         {
             if (Player.ChampionName != "Lucian") return;
             Game.PrintChat("Hoola Lucian - Loaded Successfully, Good Luck! :)");
-            Q = new Spell(SpellSlot.Q, 675);
-            Q1 = new Spell(SpellSlot.Q, 1200);
-            W = new Spell(SpellSlot.W, 1200, TargetSelector.DamageType.Magical);
+            Q = new Spell(SpellSlot.Q, 500);
+            Q1 = new Spell(SpellSlot.Q, 900);
+            W = new Spell(SpellSlot.W, 900, TargetSelector.DamageType.Magical);
             E = new Spell(SpellSlot.E, 475f);
-            R = new Spell(SpellSlot.R, 1400);
+            R = new Spell(SpellSlot.R, 1175);
 
             OnMenuLoad();
 
