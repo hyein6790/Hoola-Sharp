@@ -614,19 +614,19 @@ namespace HoolaRiven
 
             switch (args.Animation)
             {
-                case "Spell1a":
+                case "c29a362b":
                     LastQ = Utils.GameTimeTickCount;
                     if (Qstrange && Orbwalker.ActiveMode != Orbwalking.OrbwalkingMode.None) Game.Say("/d");
                     QStack = 2;
                     if (Orbwalker.ActiveMode != Orbwalking.OrbwalkingMode.None && Orbwalker.ActiveMode != Orbwalking.OrbwalkingMode.LastHit && Orbwalker.ActiveMode != Orbwalking.OrbwalkingMode.Flee) Utility.DelayAction.Add((QD * 10) + 1, Reset);
                     break;
-                case "Spell1b":
+                case "c39a37be":
                     LastQ = Utils.GameTimeTickCount;
                     if (Qstrange && Orbwalker.ActiveMode != Orbwalking.OrbwalkingMode.None) Game.Say("/d");
                     QStack = 3;
                     if (Orbwalker.ActiveMode != Orbwalking.OrbwalkingMode.None && Orbwalker.ActiveMode != Orbwalking.OrbwalkingMode.LastHit && Orbwalker.ActiveMode != Orbwalking.OrbwalkingMode.Flee) Utility.DelayAction.Add((QD * 10) + 1, Reset);
                     break;
-                case "Spell1c":
+                case "c49a3951":
                     LastQ = Utils.GameTimeTickCount;
                     if (Qstrange && Orbwalker.ActiveMode != Orbwalking.OrbwalkingMode.None) Game.Say("/d");
                     QStack = 1;
