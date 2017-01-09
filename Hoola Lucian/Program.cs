@@ -58,19 +58,19 @@ namespace HoolaLucian
         {
             if (Player.ChampionName != "Lucian") return;
             Game.PrintChat("Hoola Lucian - Loaded Successfully, Good Luck! :)");
-            Q = new Spell(SpellSlot.Q, 675);
-            Q1 = new Spell(SpellSlot.Q, 1200);
-            W = new Spell(SpellSlot.W, 1200, TargetSelector.DamageType.Magical);
-            E = new Spell(SpellSlot.E, 475f);
-            R = new Spell(SpellSlot.R, 1400);
+            Q = new Spell(SpellSlot.Q, 650f);
+            Q1 = new Spell(SpellSlot.Q, 900f);
+            W = new Spell(SpellSlot.W, 1000f, TargetSelector.DamageType.Magical);
+            E = new Spell(SpellSlot.E, 425f);
+            R = new Spell(SpellSlot.R, 1200f);
 
             OnMenuLoad();
-
-            Q.SetTargetted(0.25f, 1400f);
-            Q1.SetSkillshot(0.5f, 50, float.MaxValue, false, SkillshotType.SkillshotLine);
-            W.SetSkillshot(0.30f, 80f, 1600f, true, SkillshotType.SkillshotLine);
-            R.SetSkillshot(0.2f, 110f, 2500, true, SkillshotType.SkillshotLine);
-
+            
+            Q.SetTargetted(0.25f, float.MaxValue);
+            Q1.SetSkillshot(0.35f, 25f, float.MaxValue, false, SkillshotType.SkillshotLine);
+            W.SetSkillshot(0.3f, 80f, 1600, true, SkillshotType.SkillshotLine);
+            R.SetSkillshot(0.2f, 110f, 2800, true, SkillshotType.SkillshotLine);
+            
             Spellbook.OnCastSpell += Spellbook_OnCastSpell;
             Game.OnUpdate += Game_OnUpdate;
             Drawing.OnEndScene += Drawing_OnEndScene;
